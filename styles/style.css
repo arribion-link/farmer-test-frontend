@@ -304,6 +304,9 @@ footer{
 
 
 @media(max-width:678px){
+    p{
+        font-size: 0.875em;
+    }
     .hero-section .hero-heading{
          font-size: 1.8em;
     }
