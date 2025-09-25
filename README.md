@@ -20,7 +20,7 @@ git clone https://github.com/arribion-link/farmer-test-frontend.git
 
 ## Project Structure
 
-```bash
+```
     assets/
         |_images
     auth/
