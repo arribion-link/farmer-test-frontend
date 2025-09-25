@@ -121,7 +121,9 @@ header nav ul{
 
 }
 
-
+.download-image{
+    max-width: 10em;
+}
 
 /* Join the Farming Revolution section */
 
