@@ -21,6 +21,11 @@ section{
     margin: 2em 1em;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 /* HEADER SECTION */
 
 header{
@@ -31,8 +36,117 @@ header{
     padding: 1em;
 }
 
+.logo{
+    font-size: 1.2em;
+}
+
+header nav ul{
+    display: flex;
+    gap: 2em;
+
+}
+
 
 /* HERO SECTION */
 .hero-section{
-    background-image: linear-gradient(), url(../assets/);
+    background-image:  url(../assets/image-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+
+/* Feature Highlights section */
+
+.feature-section{
+    background-color: gainsboro;
+    padding: 1em;
+}
+
+.feature-container{
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+
+}
+
+.feature-card{
+    padding: 1em;
+    border: 1px solid #009000;
+    border-radius: 10px;
+}
+
+
+/* How It Works section */
+
+.how-it-works-section{
+    padding: 1em;
+}
+
+
+
+/* Farmer Testimonials section */
+
+.testimony-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.testimony-card{
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25em -4em rgb(66, 66, 66);
+    padding: 1em;
+    min-height: 10em;
+}
+
+.avatar-image{
+    max-width: 4em;
+    width: 5em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+
+
+/* Why Farmer360? section */
+
+.why-us-section{
+
+}
+
+
+
+/* Join the Farming Revolution section */
+
+.second-cta-section{
+    background-color: #74c476;
+    background-image: url(../assets/image-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* FOOTER SECTION */
+
+footer{
+    background-color: var(--secondary-color);
+    padding: 2em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:678px){
+    header nav{
+        display: none;
+    }
 }
