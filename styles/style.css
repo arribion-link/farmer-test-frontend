@@ -4,6 +4,10 @@
     --secondary-color: #74c476;
 }
 
+p{
+    color: rgb(76, 76, 76);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -56,7 +60,7 @@ header nav ul a{
 
 /* HERO SECTION */
 .hero-section{
-    /* background-image:  url(../assets/image-3.jpg); */
+    background-image:  url(../assets/background-1.jpg);
     text-align: center;
     padding: 7em 1em;
     background-position: center;
@@ -106,10 +110,23 @@ header nav ul a{
     transform: scale(1.06);
 }
 
+.feature-card button{
+    margin-top: 1em;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 /* How It Works section */
 
 .how-it-works-section{
     padding: 1em;
+    background-color: white;
 }
 
 .steps-container{
@@ -182,13 +199,20 @@ header nav ul a{
     border: 1px solid gainsboro;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 25em -4em rgb(0, 0, 0);
+    box-shadow: 1px 1px 5em -3em rgb(49, 49, 49);
     padding: 1em;
-    min-height: 10em;
+    min-height: 15em;
 }
 
 .testimony-card:hover{
     transform: translateX(1.1);
+}
+
+.testimony-profile-container{
+    display: flex;
+    gap: 1em;
+    padding-top: 3em;
+    align-items: center;
 }
 
 .avatar-image{
@@ -199,16 +223,38 @@ header nav ul a{
 }
 
 
-
 /* Why Farmer360? section */
 
 .why-us-section{
    padding: 1em;
    min-height: 70vh;
+   background-color: gainsboro;
 }
 
 .download-image{
     max-width: 10em;
+}
+
+/* second-cta-section */
+.second-cta-section form{
+   padding: 3em;
+}
+
+.second-cta-section form .form-group{
+    margin: 1em;
+}
+
+.second-cta-section form button{
+    width: 25em;
+    padding: 5px;
+    background-color: #00441b;
+    color: white;
+    border: none;
+}
+
+.mobile-option-container{
+    display: flex;
+    margin: auto;
 }
 
 /* Join the Farming Revolution section */
@@ -217,14 +263,12 @@ header nav ul a{
     padding: 2em;
     text-align: center;
     background-color: #74c476;
-    /* background-image: url(../assets/image-7.jpg); */
+    background-image: url(../assets/image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: rgb(105, 152, 105);
 }
-
-
 
 /* FOOTER SECTION */
 
@@ -233,6 +277,16 @@ footer{
     padding: 2em;
 }
 
+.footer{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 2em;
+}
+
+
+footer ul{
+    list-style-type: none;
+}
 
 /* MEDIA QUERIES */
 
@@ -254,6 +308,11 @@ footer{
         margin-top: 2.7em;
     }
 
+    .second-cta-section form button{
+    width: 20em;
+    padding: 4px;
+}
+
     .step-image{
         max-width: 40em;
         min-width: 20em;
@@ -264,6 +323,10 @@ footer{
 
 
 @media(max-width:800px){
+    .second-cta-section form button{
+    width: 18em;
+    }
+
     .section-header{
         text-align: center;
     }
@@ -304,6 +367,11 @@ footer{
 
 
 @media(max-width:678px){
+
+     .second-cta-section form button{
+     width: 15em;
+    }
+    
     p{
         font-size: 0.875em;
     }
