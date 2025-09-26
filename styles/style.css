@@ -69,6 +69,7 @@ header nav ul a{
     min-height: 80vh;
     border-radius: 10px;
     background-color: rgb(105, 152, 105);
+    margin: 1em;
 }
 
 .hero-section .hero-heading{
